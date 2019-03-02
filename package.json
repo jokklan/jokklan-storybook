@@ -3,9 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "current-device": "^0.8.0",
+    "i18next": "^15.0.4",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "numeral": "^2.0.6",
     "react": "^16.8.3",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "react-text-mask": "^5.4.3",
+    "text-mask-addons": "^3.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public -c .storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,11 +34,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@storybook/react": "^4.1.13",
+    "@babel/core": "^7.3.4",
     "@storybook/addon-actions": "^4.1.13",
+    "@storybook/addon-knobs": "^4.1.13",
     "@storybook/addon-links": "^4.1.13",
     "@storybook/addons": "^4.1.13",
-    "@babel/core": "^7.3.4",
+    "@storybook/react": "^4.1.13",
     "babel-loader": "^8.0.5"
   }
 }
