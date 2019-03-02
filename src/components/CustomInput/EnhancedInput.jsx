@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import withFormattedValue from './withFormattedValue'
-import featureDetection from '../utilities/featureDetection'
+import featureDetection from '../../utilities/featureDetection'
 
 const EnhancedInput = ({ allowNative, type, nativeProps, enhancedProps, updateOnChange, component, formatValue, valueFormat, displayFormat, ...props }) => {
   if (allowNative && featureDetection.inputType(type)) {
